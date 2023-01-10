@@ -1,0 +1,34 @@
+{
+  "name": "vfomin",
+  "version": "1.0.0",
+  "description": "vfomin.ru site",
+  "source": "index.html",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Beenlord/vfomin.git"
+  },
+  "keywords": [
+    "vidit card",
+    "vfomin",
+    "fomin"
+  ],
+  "author": "Beenlord",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Beenlord/vfomin/issues"
+  },
+  "homepage": "https://github.com/Beenlord/vfomin#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "@parcel/transformer-vue": "^2.8.2",
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  }
+}

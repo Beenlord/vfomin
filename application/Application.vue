@@ -1,9 +1,16 @@
 <template>
-    <div class="Application"></div>
+    <div class="Application">
+        <Resume />
+    </div>
 </template>
 
 <script>
+import Resume from './assets/components/Resume';
+
 export default {
+    components: {
+        Resume,
+    },
     data() {
         return {};
     },
@@ -11,6 +18,5 @@ export default {
 </script>
 
 <style lang="scss">
-.Application {
-}
+.Application {}
 </style>

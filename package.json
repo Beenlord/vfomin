@@ -2,11 +2,10 @@
   "name": "vfomin",
   "version": "1.0.0",
   "description": "vfomin.ru site",
-  "source": "index.html",
-  "main": "index.js",
+  "targets": { "main": false },
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",

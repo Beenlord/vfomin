@@ -22,4 +22,5 @@ jobs:
             key: ${{ secrets.SSH_PRIVATE_KEY }}
             connect_timeout: 10s
             script: |
-                echo "Ok!"
+                cd /var/www/vfomin
+                git pull origin main

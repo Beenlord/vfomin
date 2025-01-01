@@ -1,0 +1,27 @@
+name: Deploy to vfomin.com
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Deploy via SSH
+      uses: appleboy/ssh-action@v0.1.7
+      with:
+        host: 89.223.67.30
+        username: root
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd /var/www/vfomin
+          git pull origin main
+          composer install --no-dev
+          php artisan migrate --force
+          sudo systemctl reload php8.0-fpm

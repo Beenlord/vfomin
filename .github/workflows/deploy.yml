@@ -22,7 +22,7 @@ jobs:
               source: "./"
               destination: "/var/tmp/vfomin.zip"
               scripts: |
-                cd /var/www/vfomin && sudo rm -rf * && sudo mv /var/tmp/vfomin.zip .
+                cd /var/www/vfomin && sudo rm -rf * && sudo mv /var/tmp/vfomin.zip . && sudo unzip vfomin.zip
               # sudo rm -r /var/www/vfomin && sudo mkdir /var/www/vfomin
               # sudo chown -R www-data:www-data /var/www/vfomin
               # sudo chmod -R 755 /var/www/vfomin

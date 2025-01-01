@@ -23,4 +23,5 @@ jobs:
               destination: "/var/tmp/vfomin.com.zip"
               scripts: |
                 cd /var/www/vfomin
-                git pull origin main
+                rm -rf *
+                mv /var/www/vfomin.com.zip /var/www/vfomin

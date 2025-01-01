@@ -14,7 +14,7 @@ jobs:
           uses: actions/checkout@v4
         
         - name: Action SSH
-          uses: tiyee/action-ssh@release
+          uses: tiyee/action-ssh@1.0.1
           with:
             host: 89.223.67.30
             username: root

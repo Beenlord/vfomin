@@ -1,2 +1,2 @@
 <?php
-    echo "Welcome to: vfomin.com";
+    echo "Welcome to: vfomin.com (test)";

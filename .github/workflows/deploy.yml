@@ -22,6 +22,6 @@ jobs:
         script: |
           cd /var/www/vfomin
           git pull origin main
-          composer install --no-dev
-          php artisan migrate --force
-          sudo systemctl reload php8.0-fpm
+          # composer install --no-dev
+          # php artisan migrate --force
+          # sudo systemctl reload php8.0-fpm

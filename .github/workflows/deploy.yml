@@ -23,6 +23,6 @@ jobs:
               source: "./"
               destination: "/var/tmp/vfomin.zip"
               scripts: |
-                cd /var/www/vfomin && git pull origin main
+                cd /var/www/vfomin && git pull -f
               #  rm -rf /var/www/vfomin/*
               #  unzip /var/tmp/vfomin.zip -d /var/www/vfomin

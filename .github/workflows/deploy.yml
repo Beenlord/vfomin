@@ -12,16 +12,14 @@ jobs:
     steps:
         - name: Setup repo
           uses: actions/checkout@v4
-        
-        - name: Action SSH
-          uses: tiyee/action-ssh@1.0.1
+
+
+        - name: ssh pipelines
+          uses: cross-the-world/ssh-pipeline@master
           with:
             host: 89.223.67.30
-            username: root
-            privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
-            command: |
-                cd /var/www/vfomin
-                git pull origin main
-                # composer install --no-dev
-                # php artisan migrate --force
-                # sudo systemctl reload php8.0-fpm
+            user: root
+            key: ${{ secrets.SSH_PRIVATE_KEY }}
+            connect_timeout: 10s
+            script: |
+                echo "Ok!"

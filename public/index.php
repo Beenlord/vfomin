@@ -23,6 +23,8 @@
             height: 100dvh;
             max-width: 1200px;
             margin: 0 auto;
+
+            font-family: "Montserrat", serif;
         }
     </style>
 </head>

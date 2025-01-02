@@ -35,7 +35,6 @@
     <p>
         Personal source
     </p>
-    <hr>
     <h2>
         Portfolio
     </h2>

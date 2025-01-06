@@ -6,7 +6,7 @@
 
     <title>Vladimir Aleksandrovich</title>
 
-	<link rel="stylesheet" href="/assets/css/main.scss">
+	<link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
     <h1>

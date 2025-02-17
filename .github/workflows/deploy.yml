@@ -24,3 +24,4 @@ jobs:
               destination: "/var/tmp/vfomin.zip"
               scripts: |
                 cd /var/www/vfomin && git reset --hard && git pull -f
+                cd /var/www/vfomin && npm ci && npm run build
